@@ -1,0 +1,18 @@
+<div>
+  Welcome to the sample RestPack Sinatra app
+
+  <hr />
+
+  <% if @restpack.user %>
+    <h1>Hi <%= @restpack.user[:name] %></h1>
+    <a href="<%= @restpack.logout_url() %>">Logout</a>
+  <% else %>
+    Login with :
+    <a href="<%= @restpack.login_url(:twitter) %>">Twitter</a> |
+    <a href="<%= @restpack.login_url(:google_oauth2) %>">Google</a>
+  <% end %>
+
+  <hr />
+
+  <%= Maruku.new(@restpack.debug_info).to_html %>
+</div>
