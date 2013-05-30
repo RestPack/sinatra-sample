@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'restpack-web'
+require 'restpack_web'
 require 'maruku'
 
 class App < Sinatra::Base

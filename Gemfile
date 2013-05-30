@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 gem 'sinatra'
 
-gem 'restpack-web', '~> 0.2.25'
+gem 'restpack_web', '~> 0.2.19'
 gem 'maruku'
 
 group :development do
